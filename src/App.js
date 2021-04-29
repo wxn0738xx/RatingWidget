@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './img/giveeasyLogo.png';
+import { Layout, Rate, Breadcrumb,Menu } from 'antd';
+import RatingWidgetPage from "./containers/RatingWidgetPage";
 
+import 'antd/dist/antd.css';
+import './App.css';
+const { Header, Content, Footer } = Layout;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Layout className="layout" style={{height:"100vh"}}>
+        <Header>
+            <div className="logo" ><img src={logo} style={{height: 60}}></img></div>
+
+        </Header>
+          <Content style={{ padding: '0 50px' }}>
+              <br/>
+
+              <div className="site-layout-content"><RatingWidgetPage/></div>
+
+          </Content>
+        <Footer style={{ textAlign: 'center' }}>Code Test © 2021 GiveEasy</Footer>
+      </Layout>
+
   );
 }
 
