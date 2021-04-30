@@ -11,7 +11,7 @@ function App() {
   return (
       <Layout className="layout" style={{height:"100vh"}}>
         <Header>
-            <div className="logo" ><img src={logo} style={{height: 60}}/></div>
+            <div className="logo" ><img src={logo} style={{height: 60}}></img></div>
         </Header>
           <Content style={{ padding: '0 50px' }}>
               <br/>
