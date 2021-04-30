@@ -34,7 +34,7 @@ class RatingWidgetPage extends Component {
             resultPanel = (
                 <div>
                     <ResultPanel ratingScore={this.state.ratingScore}/>
-                    <Button type="primary" onClick={this.clearRatingHandler}>Clear Rating</Button>
+                    <Button type="primary" onClick={this.clearRatingHandler}>Save Rating</Button>
                 </div>
             )
         }
