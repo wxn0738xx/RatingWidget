@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Rate, Result, Typography} from 'antd';
+import {Button, Typography} from 'antd';
 import RatingWidget from "../components/RatingWidget";
 import ResultPanel from "../components/ResultPanel";
 
@@ -10,11 +10,12 @@ class RatingWidgetPage extends Component {
     state = {
         ratingScore: 0,
         showResultPanel: false,
-
     }
 
+    // handler when rating change
     ratingHandler = name => value => {
         this.setState({[name]: value})
+        // if rating change, show resultPanel
         if (name === "ratingScore" && value !== 0) {
             this.setState({showResultPanel: true})
         }

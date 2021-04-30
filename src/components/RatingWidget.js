@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { Rate } from 'antd';
+import {Rate} from 'antd';
 
-const RatingWidget = ( props ) => {
+const RatingWidget = (props) => {
     return (
-        <div >
+        <div>
             <Rate allowHalf={props.allowHalf} defaultValue={props.defaultValue}
-            value={props.value} onChange={props.onChange}/>
+                  value={props.value} onChange={props.onChange}/>
         </div>
     );
 };
